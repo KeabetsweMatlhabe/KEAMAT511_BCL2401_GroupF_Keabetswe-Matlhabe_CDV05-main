@@ -2,23 +2,206 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <tiltle>Personal Portfolio Website</tiltle>
+    <title>Keabetswe Matlhabe's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <div class="hero">
-        <nav> 
-            <img src="" alt="">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">HIRE ME</a></li>
-            </ul>
-        </nav>
+
+  <!--Navigation Desktop-->
+  <nav id="desktop-nav">
+    <div class="logo">Keabetswe Matlhabe</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Keabetswe Matlhabe</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about " onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+<!--Profile Section-->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./images/kea3.jpg" alt="Keabetswe's profile picture" class="profile__img"/>
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hi, welcome to the world of</p>
+      <h1 class="title">Keabetswe Matlhabe</h1>
+      <p class="section__text__p2">Junior Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./images/HR CV.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./images/images.png" class="icon" onclick="location.href='https:linkedin.com/in/mmathapelo-keabetswe-matlhabe-42768b276/'" alt="Keabetswe's LinkedIn profile"/>
+        <img src="./images/github-10-xxl.png" class="icon" onclick="location.href='https:www.github.com/KeabetsweMatlhabe '" alt="Keabetswe's GitHub profile"/>
+      </div>
+    </div>
+    <img
+      src="./images/arrow.png" class="icon arrow" onclick="location.href='./#about'" alt="arrow navigating button"/>
+  </section>
+
+<!--About Section-->
+  <section id="about">
+    <p class="section__text__p1">Get To Know Keabetswe</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img
+          class="about-pic"
+          src="./images/Keamat.jpg"
+          alt="Profile Picture"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img class="icon" src="./images/icone-de-l-education-rose.png" alt="Experience icon"/>
+            <h3>Experience</h3>
+            <p>Beginner<br />Frontend Development</p>
+          </div>
+          <div class="details-container">
+            <img class="icon" src="./images/icone-de-l-education-rose.png" alt="Experience icon"/>
+            <h3>Education</h3>
+            <p>Diploma in Nursing Science<br />N.S.C. Wholesale and Retail</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Welcome to my portfolio! I'm passionate about crafting captivating digital experiences and bringing ideas to life through web development. 
+            With a background in politics and business, I thrive on pushing the boundaries of creativity and functionality in every project I undertake. 
+            Whether it's designing sleek user interfaces, optimizing performance, or solving complex coding challenges, I'm dedicated to delivering top-notch solutions that exceed expectations. 
+            Outside of coding, you'll often find me exploring the latest trends in technology, debating politics and its discourse, honing my design skills, or seeking inspiration in the great outdoors. 
+            Let's collaborate and build something remarkable together!
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./images/images (1).png" class="icon arrow" onclick="location.href='./#experience'" alt="arrow navigating buttom"/>
+  </section>
+
+<!--Experience Section-->
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img class="icon" src="./images/html.png" alt="Experience icon"/>
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="./images/css.png" alt="Experience icon"/>
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="./images/javascript.png" alt="Experience icon"/>
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img class="icon" src="./images/react.png" alt="Experience icon"/>
+              <div>
+                <h3>React</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+    <img src="./images/images (1).png" class="icon arrow" onclick="location.href='./#projects'" alt="arrow navigating button"/>
+  </section>   
+
+<!--Projects Section-->
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent Work</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="./images/bowl.jpg" alt="project-1"/>
+          </div>
+          <h2 class="experience-sub-title project-title">First Website</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https:www.github.com/KeabetsweMatlhabe/EAMAT511_bcl2401_groupF_KeabetsweMatlhabeSDF01'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://65c642fc8727d60b5aacb50e--magenta-faloodeh-eadefb.netlify.app/'">Live Demo</button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img class="project-img" src="./images/Project 2a.jpg" alt="project-2"/>
+          </div>
+          <h2 class="experience-sub-title project-title">First Mobile App</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https:www.github.com/HloleloRampete/First-Mobile-App'">GitHub</button>
+            <button class="btn btn-color-2 project-btn" onclick="href='https:www.grocerylistwithease.netlify.app/'">Live Demo</button>
+          </div>
+        </div>
+    <img src="./images/images (1).png" class="icon arrow" onclick="location.href='./#contact'" alt="arrow navigating button"/>
+  </section>
+
+<!--Contact Section-->
+  <section id="contact">
+    <p class="section__text__p1">Get In Touch With Me</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./images/pink-email-icon-md.png" class="icon contact-icon" alt="Email icon"
+        />
+        <p><a href="mailto:mkmatlhabe@gmail.com">mkmatlhabe@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./images/images.png" class="icon contact-icon" alt="Email icon"/>
+        <p><a href="https:linkedin.com/in/mmathapelo-keabetswe-matlhabe-42768b276/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+<!--Footer Section-->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Keabetswe Matlhabe. All Rights Reserved</p>
+  </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
